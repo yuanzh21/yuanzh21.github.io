@@ -48,7 +48,7 @@ div.menu-category {
   padding-bottom: 0.2rem;
   border-bottom: 1px solid #bbb;
   color: #111;
-  width: 180px;   /* control underline length */
+  width: 100px;   /* control underline length */
 }
 
 /* Sidebar items */

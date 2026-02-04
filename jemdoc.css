@@ -215,3 +215,8 @@ div#footer { display: none; }
 #conferences td:nth-child(2) {
   text-align: justify;
 }
+
+
+details {
+  width: 1000px;
+}

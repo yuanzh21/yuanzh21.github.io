@@ -23,21 +23,22 @@ div#toptitle h1 {
 
 /* Grid layout */
 table#tlayout {
-  border: none;
-  border-collapse: separate;
-  background: #fff;
-  width: 100%;
+  table-layout: fixed;         /* This is the most important line */
+  width: 1400px;               /* Set a total fixed width for the website */
+  margin-left: 300px;          /* This sets the fixed distance from the left edge */
+  margin-right: auto;
+  border-collapse: collapse;
 }
 
 /* Sidebar menu */
 #layout-menu {
-  min-width: 240px;
+  width: 250px;
   background: #fff;                /* plain white */
   border-right: 1px solid #bbb;    /* medium divider line */
   vertical-align: top;
   white-space: nowrap;
   text-align: right;               /* right align items */
-  padding: 0.75rem 12px;
+  padding: 2.5rem 20px 0 0;
 }
 
 /* Sidebar categories */
@@ -48,7 +49,7 @@ div.menu-category {
   padding-bottom: 0.2rem;
   border-bottom: 1px solid #bbb;
   color: #111;
-  width: 100px;   /* control underline length */
+  width: 100 px;   /* control underline length */
 }
 
 /* Sidebar items */
@@ -58,7 +59,7 @@ div.menu-item {
 
 #layout-menu a {
   display: inline-block;
-  padding-right: 4px;              /* breathing room from border */
+  padding-right: 4 px;              /* breathing room from border */
   color: #000080;
   text-decoration: none;
 }
@@ -76,7 +77,7 @@ div.menu-item {
   vertical-align: top;
   text-align: justify;
   padding: 2.5rem 1.5rem 2rem;     /* extra top padding */
-  max-width: 800px;                /* limit width */
+  width: 1100px;                /* limit width */
 }
 
 /* Headings */
@@ -167,12 +168,17 @@ img { border: none; max-width: 100%; height: auto; }
 img.portrait {
   float: right;
   margin: 0.2rem 0 1rem 1rem;
-  width: 220px;
+  width: 220 px;
   border-radius: 6px;
 }
 
 /* Footer */
-div#footer { display: none; }
+div#footer { 
+  display: block;        /* This makes it visible again */
+  padding: 2rem 0rem;  /* Adds some space so it's not cramped */
+  color: #777;           /* Makes it a subtle grey (optional) */
+  font-size: 0.85rem;    /* Makes the text slightly smaller (optional) */
+}
 
 /* Print */
 @media print {

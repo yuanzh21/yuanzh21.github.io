@@ -24,8 +24,8 @@ div#toptitle h1 {
 /* Grid layout */
 table#tlayout {
   table-layout: fixed;         /* This is the most important line */
-  width: 1400px;               /* Set a total fixed width for the website */
-  margin-left: 300px;          /* This sets the fixed distance from the left edge */
+  width: 1200px;               /* Set a total fixed width for the website */
+  margin-left: 200px;          /* This sets the fixed distance from the left edge */
   margin-right: auto;
   border-collapse: collapse;
 }

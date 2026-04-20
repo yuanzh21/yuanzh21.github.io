@@ -76,7 +76,7 @@ div.menu-item {
   border: none;
   vertical-align: top;
   text-align: justify;
-  padding: 2.5rem 1.5rem 2rem;     /* extra top padding */
+  padding: 2.5rem 1.5rem 0rem;     /* extra top padding */
   width: 1100px;                /* limit width */
 }
 

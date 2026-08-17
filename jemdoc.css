@@ -226,3 +226,52 @@ div#footer {
 details {
   width: 1000px;
 }
+
+/* Research topics */
+.topic-nav {
+  margin: 1rem 0 1.4rem;
+  padding: 0.75rem 1rem;
+  background: #f7f7fb;
+  border-left: 3px solid #000080;
+}
+
+.topic-nav p {
+  margin: 0;
+}
+
+.research-topic {
+  margin-bottom: 1.6rem;
+}
+
+.research-topic > h2 {
+  margin-top: 1.25rem;
+}
+
+.research-topic > h3 {
+  color: #444;
+  font-size: 1rem;
+  margin-top: 0.75rem;
+}
+
+table.research-work {
+  width: 100%;
+  margin: 0.1rem 0 0.6rem !important;
+}
+
+table.research-work td {
+  padding: 0.32rem 0.3rem 0.32rem 0;
+}
+
+table.research-work td:first-child {
+  width: 3.2rem;
+  color: #000080;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.research-note {
+  margin: 0.5rem 0 0.8rem;
+  padding: 0.7rem 0.9rem;
+  background: #f7f7fb;
+  border-left: 3px solid #bbb;
+}

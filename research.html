@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="description" content="Research topics and selected work by Zhenyi Yuan and the COLAS Lab." />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Research | Zhenyi Yuan</title>
+<link rel="shortcut icon" href="myicon.ico" />
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Zhenyi Yuan</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="research.html" class="current">Research</a></div>
+<div class="menu-item"><a href="publications.html">Publications</a></div>
+<div class="menu-item"><a href="team.html">COLAS Lab</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Research</h1>
+</div>
+
+<p>
+My research lies at the intersection of <b>Control</b>, <b>AI</b>, and <b>Energy Systems</b>. The overarching goal is to develop learning-enabled decision-making methods that are not only effective from data, but also interpretable, reliable, and grounded in system structure.
+</p>
+
+<div class="topic-nav">
+<p><b>Topics:</b> <a href="#data-driven-control">Data-Driven Control + Koopman Operators</a> &middot; <a href="#control-and-llms">Control Theory + LLMs</a> &middot; <a href="#sustainable-energy">Machine Learning + Sustainable Energy Systems</a></p>
+</div>
+
+<div class="research-topic" id="data-driven-control">
+<h2>Data-Driven Control &amp; Koopman Operators</h2>
+<p>
+Modern systems are often too complex for accurate first-principles modeling, yet purely black-box models can be difficult to use for control. We study structured, data-driven representations of nonlinear dynamics, particularly Koopman-based and bilinear models, that connect learning from trajectories with predictive and optimal control.
+</p>
+
+<h3>Questions of Interest</h3>
+<ul>
+<li>How can we learn control-oriented representations of nonlinear systems from limited trajectory data?</li>
+<li>How can Koopman and bilinear structure be translated into tractable predictive and optimal controllers?</li>
+<li>What guarantees can be established for data-driven models operating in closed loop?</li>
+</ul>
+
+<h3>Selected Works</h3>
+<table class="research-work" summary="Selected work in data-driven control and Koopman operators.">
+<tr><td>[CDC'25]</td><td><b>Data-enabled predictive control for nonlinear systems based on a Koopman bilinear realization</b>. [<a href="https://ieeexplore.ieee.org/document/11312522" target="_blank">IEEE Xplore</a>, <a href="https://arxiv.org/pdf/2505.03346" target="_blank">arXiv</a>]</td></tr>
+<tr><td>[LCSS'22]</td><td><b>Data-driven optimal control of bilinear systems</b>. [<a href="https://ieeexplore.ieee.org/abstract/document/9749761" target="_blank">IEEE Xplore</a>, <a href="https://arxiv.org/abs/2112.15510" target="_blank">arXiv</a>]</td></tr>
+</table>
+</div>
+
+<div class="research-topic" id="control-and-llms">
+<h2>Control Theory &amp; Large Language Models</h2>
+<p>
+Large language and multimodal models increasingly operate as agents: they receive feedback, update decisions, and interact repeatedly with users and environments. We explore how ideas from feedback control, dynamical systems, and optimization can help understand and improve these closed-loop AI systems.
+</p>
+
+<h3>Current Directions</h3>
+<ul>
+<li>Feedback-based methods for aligning and adapting language and vision-language models.</li>
+<li>Control-theoretic perspectives on reliability, robustness, and safety in iterative AI decision-making.</li>
+<li>Learning and optimization methods for agents interacting with dynamic environments.</li>
+</ul>
+
+<div class="research-note">
+This is an active and growing research direction in the COLAS Lab. We welcome conversations with researchers working across control, machine learning, and foundation models.
+</div>
+</div>
+
+<div class="research-topic" id="sustainable-energy">
+<h2>Machine Learning &amp; Sustainable Energy Systems</h2>
+<p>
+The transition to low-carbon energy brings new uncertainty, decentralization, and operational complexity. We develop learning-based controllers for power and energy systems while explicitly accounting for stability, safety, communication constraints, and equitable access to network resources.
+</p>
+
+<h3>Questions of Interest</h3>
+<ul>
+<li>How can learned controllers retain stability and safety guarantees when deployed on physical grids?</li>
+<li>How should distributed energy resources coordinate under limited or changing communication?</li>
+<li>How can efficiency, resilience, and equity be incorporated into data-driven energy management?</li>
+</ul>
+
+<h3>Selected Works</h3>
+<table class="research-work" summary="Selected work in machine learning and sustainable energy systems.">
+<tr><td>[TSG'26]</td><td><b>Stability constrained voltage control in distribution grids with arbitrary communication infrastructures</b>. [<a href="https://ieeexplore.ieee.org/document/11164977" target="_blank">IEEE Xplore</a>, <a href="https://arxiv.org/abs/2507.18158" target="_blank">arXiv</a>]</td></tr>
+<tr><td>[PSCC'24]</td><td><b>Unsupervised learning for equitable DER control</b>. [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0378779624005200" target="_blank">ScienceDirect</a>, <a href="https://arxiv.org/abs/2403.11068" target="_blank">arXiv</a>]</td></tr>
+<tr><td>[LCSS'23]</td><td><b>Learning decentralized frequency controllers for energy storage systems</b>. [<a href="https://ieeexplore.ieee.org/abstract/document/10315186/" target="_blank">IEEE Xplore</a>]</td></tr>
+<tr><td>[LCSS'23]</td><td><b>Constraints on OPF surrogates for learning stable local Volt/Var controllers</b>. [<a href="https://ieeexplore.ieee.org/abstract/document/10158325" target="blank">IEEE Xplore</a>, <a href="https://arxiv.org/abs/2306.04464" target="blank">arXiv</a>]</td></tr>
+<tr><td>[TPS'24]</td><td><b>Learning provably stable local Volt/Var controllers for efficient network operation</b>. [<a href="https://ieeexplore.ieee.org/abstract/document/10106014" target="_blank">IEEE Xplore</a>, <a href="https://arxiv.org/abs/2209.12956" target="_blank">arXiv</a>]</td></tr>
+<tr><td>[SCL'24]</td><td><b>Reinforcement learning for distributed transient frequency control with stability and safety guarantees</b>. [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0167691124000410" target="_blank">ScienceDirect</a>, <a href="https://arxiv.org/abs/2207.03329" target="_blank">arXiv</a>]</td></tr>
+</table>
+
+</div>
+
+<p>
+See <a href="publications.html">Publications</a> for a complete list of papers. Prospective students and collaborators are also welcome to learn more about the <a href="team.html">COLAS Lab</a>.
+</p>
+
+</td>
+</tr>
+</table>
+</body>
+</html>

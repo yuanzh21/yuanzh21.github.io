@@ -1,7 +1,11 @@
 /* --- Jemdoc CSS (cleaned & minimal) --- */
 
 /* Global reset */
-html { box-sizing: border-box; }
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;          /* keep page width stable between short and long pages */
+  scrollbar-gutter: stable;    /* reserve the same scrollbar space in modern browsers */
+}
 *, *:before, *:after { box-sizing: inherit; }
 
 body {
@@ -23,10 +27,11 @@ div#toptitle h1 {
 
 /* Grid layout */
 table#tlayout {
-  table-layout: fixed;         /* This is the most important line */
-  width: 1200px;               /* Set a total fixed width for the website */
-  margin-left: 200px;          /* This sets the fixed distance from the left edge */
-  margin-right: auto;
+  table-layout: fixed;
+  width: calc(100% - 4rem);    /* leave room for fluid, asymmetric margins */
+  max-width: 1300px;           /* allow a little more room for the main content */
+  margin-left: max(1.25rem, calc((100% - 1300px) / 2 - 3rem));
+  margin-right: auto;          /* keep the layout subtly shifted to the left */
   border-collapse: collapse;
 }
 
@@ -77,7 +82,7 @@ div.menu-item {
   vertical-align: top;
   text-align: justify;
   padding: 2.5rem 1.5rem 0rem;     /* extra top padding */
-  width: 1100px;                /* limit width */
+  width: auto;
 }
 
 /* Headings */
@@ -224,7 +229,51 @@ div#footer {
 
 
 details {
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Stack the menu above the content on narrow screens. */
+@media screen and (max-width: 760px) {
+  table#tlayout {
+    table-layout: auto;
+    width: calc(100% - 2rem);
+    margin-left: 0.75rem;
+    margin-right: auto;
+  }
+
+  table#tlayout,
+  table#tlayout > tbody,
+  table#tlayout > tbody > tr,
+  #layout-menu,
+  #layout-content {
+    display: block;
+    width: 100%;
+  }
+
+  #layout-menu {
+    padding: 1rem 0 0.8rem;
+    border-right: none;
+    border-bottom: 1px solid #bbb;
+    text-align: left;
+    white-space: normal;
+  }
+
+  div.menu-category {
+    display: block;
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0.45rem;
+  }
+
+  div.menu-item {
+    display: inline-block;
+    margin: 0.2rem 1rem 0.2rem 0;
+  }
+
+  #layout-content {
+    padding: 1.25rem 0 0;
+  }
 }
 
 /* Research topics */
@@ -267,6 +316,12 @@ table.research-work td:first-child {
   color: #000080;
   font-weight: 700;
   white-space: nowrap;
+}
+
+table.research-presentations td:first-child {
+  width: 4.6rem;
+  color: #666;
+  font-weight: 400;
 }
 
 .research-note {

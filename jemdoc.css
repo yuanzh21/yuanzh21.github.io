@@ -117,6 +117,17 @@ p + ul, p + ol { margin-top: -0.3rem; }
 a { color: #000080; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
+/* Keep contact details icons visually aligned and consistently sized. */
+.contact-icon {
+  display: inline-block;
+  width: 1.25em;
+  margin-right: 0.08em;
+  font-size: 0.95em;
+  line-height: 1;
+  text-align: center;
+  vertical-align: -0.04em;
+}
+
 /* Tables & code */
 table {
   border-collapse: collapse;
